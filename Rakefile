@@ -5,14 +5,14 @@ require 'spec/rake/spectask'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "remarkable_mongo"
+    gem.name = "remarkable_mongo_ign"
     gem.summary = %Q{Remarkable Matchers for MongoDB ORMs}
-    gem.email = "nicolas.merouze@gmail.com"
-    gem.homepage = "http://github.com/nmerouze/remarkable_mongo"
-    gem.authors = ["Nicolas Mérouze"]
+    gem.email = "nicolas.merouze@gmail.com, rubyorchard@gmail.com"
+    gem.homepage = "http://github.com/rubyorchard/remarkable_mongo"
+    gem.authors = ["Nicolas Mérouze", "Chandra Patni"]
     
-    gem.add_dependency('remarkable',  '~> 3.1.8')
-    gem.add_dependency('mongo_mapper', '~> 0.6.1')
+    gem.add_dependency('remarkable',  '~> 3.1.13')
+    gem.add_dependency('mongo_mapper_ign', '>= 0.7.6')
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
